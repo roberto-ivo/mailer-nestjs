@@ -1,0 +1,19 @@
+server:
+  PORT: 4000
+  root: &root http://localhost
+
+db:
+  type: postgres
+  host: localhost
+  port: 5432
+  username: postgres
+  password: postgres
+  database: officialshrimp
+  synchronize: true
+  migrationsRun: false
+  logging: true
+
+graphql:
+  debug: true
+  playground: true
+  introspection: true
