@@ -6,7 +6,7 @@
 
 Repository created to run an email module built with [Nest](https://docs.nestjs.com/).
 
-## Pré-requisitos
+## :package: Pré-requisitos
 
 Before starting, you will need to have the following tools installed on your machine:
 
@@ -34,9 +34,9 @@ cd config
 ```
 
 Modify the variables in default.yml to your credentials:
-
-![credencials](https://github.com/roberto-ivo/module-email-nestjs/blob/master/credencials.png?raw=true)
-
+<p align="center">
+  <img src="https://raw.githubusercontent.com/roberto-ivo/module-email-nestjs/master/images/credencials.png" alt="credencials" />
+</p>
 
 ### Step 3: Configure Gmail SMTP Server
 
@@ -48,8 +48,10 @@ In order for us to use Gmail's SMTP server services, you need to allow access to
 $ docker-compose up --build
 ```
 
-## Go to [Preview](http://localhost:3000/graphql)
-![preview](https://github.com/roberto-ivo/module-email-nestjs/blob/master/preview.png?raw=true)
+## :rocket: Go to [Preview](http://localhost:3000/graphql)
+<p align="center">
+  <img src="https://raw.githubusercontent.com/roberto-ivo/module-email-nestjs/master/images/preview.png" width="720" alt="preview" />
+</p>
 
 ## 🛠 Technologies
 
@@ -63,7 +65,7 @@ The following tools were used in building the project:
 - [Docker](https://www.docker.com/)
 - [Docker-compose](https://docs.docker.com/compose/)
 
-## Author
+## :construction_worker: Author
 <!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
 <!-- prettier-ignore-start -->
 <!-- markdownlint-disable -->
