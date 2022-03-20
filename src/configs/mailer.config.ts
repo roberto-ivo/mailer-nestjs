@@ -4,9 +4,9 @@ import { MailerAsyncOptions } from '@nestjs-modules/mailer/dist/interfaces/maile
 export default {
   useFactory: () => ({
     transport:
-      'smtps://camarao4.0@lapisco.ifce.edu.br:camarao4.0@smtp.gmail.com',
+      'smtps://robertoivo@lapisco.ifce.edu.br:robertoivo@smtp.gmail.com',
     defaults: {
-      from: '"No-Reply" <no-reply@camarao40.com>',
+      from: '"No-Reply" <no-reply@robertoivo.com>',
     },
     template: {
       dir: process.cwd() + '/templates',

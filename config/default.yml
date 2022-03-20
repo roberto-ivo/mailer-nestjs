@@ -1,14 +1,14 @@
 server:
-  PORT: 4000
+  PORT: 3000
   root: &root http://localhost
 
 db:
   type: postgres
-  host: localhost
+  host: db
   port: 5432
   username: postgres
   password: postgres
-  database: officialshrimp
+  database: nestDB
   synchronize: true
   migrationsRun: false
   logging: true
