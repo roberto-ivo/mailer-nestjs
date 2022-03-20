@@ -35,7 +35,7 @@ cd config
 
 Modify the variables in default.yml to your credentials:
 <p align="center">
-  <img src="https://raw.githubusercontent.com/roberto-ivo/module-email-nestjs/master/images/credencials.png" alt="credencials" />
+  <img src="https://raw.githubusercontent.com/roberto-ivo/mailer-nestjs/master/images/credencials.png" alt="credencials" />
 </p>
 
 ### Step 3: Configure Gmail SMTP Server
@@ -50,7 +50,7 @@ $ docker-compose up --build
 
 ## :rocket: Go to [Preview](http://localhost:3000/graphql)
 <p align="center">
-  <img src="https://raw.githubusercontent.com/roberto-ivo/module-email-nestjs/master/images/preview.png" width="720" alt="preview" />
+  <img src="https://raw.githubusercontent.com/roberto-ivo/mailer-nestjs/master/images/preview.png" width="720" alt="preview" />
 </p>
 
 ## 🛠 Technologies
