@@ -3,10 +3,15 @@ import { MailerAsyncOptions } from '@nestjs-modules/mailer/dist/interfaces/maile
 
 export default {
   useFactory: () => ({
-    transport:
-      'smtps://robertoivo@lapisco.ifce.edu.br:robertoivo@smtp.gmail.com',
+    transport: {
+      service: 'gmail',
+      auth: {
+        user: '<your_email>',
+        pass: '<your_password>',
+      },
+    },
     defaults: {
-      from: '"No-Reply" <no-reply@robertoivo.com>',
+      from: '"No-Reply" <no-reply@<your_name>.com>',
     },
     template: {
       dir: process.cwd() + '/templates',

@@ -18,9 +18,9 @@ export function getWelcomeMail(
 ) {
   return {
     to: email,
-    from: 'no-reply@camarao40.com',
-    subject: 'Bem-vindo(a) ao Camarão 4.0',
-    template: 'email-welcome-new',
+    from: 'no-reply@<your_name>.com',
+    subject: 'Ative a sua conta - PRF 2.0',
+    template: 'email-validation',
     context: {
       name: first_name,
       surname: surname,

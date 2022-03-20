@@ -34,8 +34,7 @@ export default class MailerService {
       pass,
     );
 
-    console.log('mail >> ', mail);
-    // await this.mailerService.sendMail(mail);
+    await this.mailerService.sendMail(mail);
     return mail;
   }
 }
