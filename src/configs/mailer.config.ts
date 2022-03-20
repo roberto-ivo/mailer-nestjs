@@ -1,17 +1,16 @@
 import { HandlebarsAdapter } from '@nestjs-modules/mailer/dist/adapters/handlebars.adapter';
 import { MailerAsyncOptions } from '@nestjs-modules/mailer/dist/interfaces/mailer-async-options.interface';
+import * as config from 'config';
+const mailerConfig = config.get('mailer');
 
 export default {
   useFactory: () => ({
     transport: {
       service: 'gmail',
       auth: {
-        user: '<your_email>',
-        pass: '<your_password>',
+        user: mailerConfig.email,
+        pass: mailerConfig.password,
       },
-    },
-    defaults: {
-      from: '"No-Reply" <no-reply@<your_name>.com>',
     },
     template: {
       dir: process.cwd() + '/templates',

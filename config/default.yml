@@ -17,3 +17,7 @@ graphql:
   debug: true
   playground: true
   introspection: true
+
+mailer:
+  email: '<your_email>'
+  password: '<your_password>'

@@ -1,3 +1,6 @@
+import * as config from 'config';
+const mailerConfig = config.get('mailer');
+
 export function generateRandomPassword() {
   const random_pass = require('randomstring');
   const password = random_pass.generate({
@@ -18,7 +21,7 @@ export function getWelcomeMail(
 ) {
   return {
     to: email,
-    from: 'no-reply@<your_name>.com',
+    from: mailerConfig.email,
     subject: 'Ative a sua conta - PRF 2.0',
     template: 'email-validation',
     context: {
